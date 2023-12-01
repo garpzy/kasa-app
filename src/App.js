@@ -46,8 +46,8 @@ function App() {
 	return (
 		<div>
       		<Header />
-			<Footer />
 			<RouterProvider router={router}/>
+			<Footer />
 		</div>
 	);
 }

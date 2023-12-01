@@ -1,4 +1,15 @@
 .footer{
     color: white;
     background-color: black;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 200px;
+    margin-top: 48px;
+}
+
+.footer img {
+    height: 40px;
+    width: max-content;
 }
