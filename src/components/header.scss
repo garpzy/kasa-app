@@ -1,7 +1,11 @@
-.header{
+.header {
     display: flex;
     align-items: center;
     justify-content: space-between;
+    margin-top: 48px;
+    margin-bottom: 48px;
+    max-width: 1240px;
+    width: 100%;
 }
 
 li, li a {
