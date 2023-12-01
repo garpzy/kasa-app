@@ -1,4 +1,5 @@
 import './App.css';
+import './index.scss';
 import Header from './components/Header';
 import Home from './pages/Home/Home';
 import {
@@ -42,10 +43,10 @@ const router = createBrowserRouter([
 
 function App() {
 	return (
-		<>
+		<div>
       <Header />
 			<RouterProvider router={router}/>
-		</>
+		</div>
 	);
 }
 
