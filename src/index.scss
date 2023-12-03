@@ -57,3 +57,10 @@ body{
     max-width: 1240px;
     width: 100%;
 }
+
+@media (max-width:500px){
+    .main{
+        gap:24px;
+        // padding: 20px;
+    }
+}
