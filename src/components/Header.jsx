@@ -5,9 +5,10 @@ import './header.scss'
 function Header(){
     return (
         <div className='header'>
-            <a href="/"> <img src={logo} alt='logo.png' className='logo'/> </a>
-            
-            <ul className='menu'>
+            <NavLink to="/">
+            <img src={logo} alt='logo.png' className='logo'/> 
+            </NavLink>
+            <ul className="menu">
                 <li><NavLink to="/">
                     Accueil</NavLink>
                 </li>
