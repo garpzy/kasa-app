@@ -24,3 +24,12 @@ li, li a {
     height: 68px;
     width: auto;
 }
+
+@media screen and (max-width: 500px){
+    li, li a {
+        font-size: 12px;
+    }    
+    .logo {
+        height: 45px;
+    }
+}
