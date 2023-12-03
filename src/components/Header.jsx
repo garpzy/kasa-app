@@ -1,3 +1,4 @@
+import { NavLink } from 'react-router-dom'
 import logo from '../assets/logo.png'
 import './header.scss'
 
@@ -8,6 +9,9 @@ function Header(){
             <ul className='menu'>
                 <li> <a href="/">Accueil</a> </li>
                 <li> <a href="">À propos</a> </li>
+                <li>
+                    <NavLink></NavLink>
+                </li>
             </ul>
         </div>
 
