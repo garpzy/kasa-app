@@ -1,8 +1,12 @@
 import './App.css';
 import './index.scss';
+
 import Header from './components/Header';
 import Footer from './components/Footer';
+
 import Home from './pages/Home/Home';
+import Logement from './pages/logement/logement';
+
 import {
   createBrowserRouter,
   RouterProvider,
@@ -39,6 +43,10 @@ const router = createBrowserRouter([
 	{
 		path: "/",
 		element: <Home />
+	},
+	{
+		path: "/logement/:id",
+		element: <Logement />
 	},
 ]);
 
