@@ -16,7 +16,6 @@ function Gallery (){
                 />
                 )
             })}
-            hey ici iront les cards
         </div>
     )
 }

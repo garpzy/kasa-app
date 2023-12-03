@@ -14,3 +14,17 @@
     height: 40px;
     width: max-content;
 }
+
+.mobile-break{
+    display: none;
+}
+
+@media (max-width:500px){
+    .footer{
+        font-size: 12px;
+        text-align: center;
+    }
+    .mobile-break{
+        display: block;
+    }
+}
