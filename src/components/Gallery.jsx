@@ -12,7 +12,7 @@ function Gallery (){
                     key={logement.id}
                     id={logement.id}
                     title={logement.title}
-                    cover={logements.cover}
+                    cover={logement.cover}
                 />
                 )
             })}

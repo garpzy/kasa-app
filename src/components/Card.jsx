@@ -1,4 +1,3 @@
-import logements from '../data/data.json'
 import { Link } from 'react-router-dom'
 import './card.scss'
 
