@@ -20,6 +20,33 @@ body{
     box-sizing: border-box;
 }
 
+.banner{
+    // background-color: rgba($color: #000000, $alpha: 0.5);
+    color: white;
+    border-radius: 24px;
+    height: 224px;
+    font-size: 48px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url("./assets/home_cover.png");
+}
+
+.mobile-break{
+    display: none;
+}
+
+@media (max-width: 600px) {
+    .banner{
+        font-size: 24px;
+        height: 112px;
+    }
+    .banner .mobile-break{
+    display: block;
+    }
+}
+
 .main{
     align-self: center;
     display: flex;

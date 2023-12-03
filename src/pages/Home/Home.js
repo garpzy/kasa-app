@@ -1,10 +1,9 @@
-import Banner from "../../components/Banner"
 import Gallery from "../../components/Gallery"
 
 function Home(){
     return(
         <>
-            <Banner />
+            <div className="banner">Chez vous, <br className="mobile-break"/>ici et ailleurs</div>
             <Gallery />
         </>
     )
