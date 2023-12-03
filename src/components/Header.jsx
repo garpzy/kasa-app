@@ -8,7 +8,7 @@ function Header(){
             <img src={logo} alt='logo.png' className='logo'/>
             <ul className='menu'>
                 <li> <a href="/">Accueil</a> </li>
-                <li> <a href="">À propos</a> </li>
+                <li> <a href="/about">À propos</a> </li>
             </ul>
         </div>
 
