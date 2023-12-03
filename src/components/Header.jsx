@@ -5,10 +5,16 @@ import './header.scss'
 function Header(){
     return (
         <div className='header'>
-            <img src={logo} alt='logo.png' className='logo'/>
+            <a href="/"> <img src={logo} alt='logo.png' className='logo'/> </a>
+            
             <ul className='menu'>
-                <li> <a href="/">Accueil</a> </li>
-                <li> <a href="/about">À propos</a> </li>
+                <li><NavLink to="/">
+                    Accueil</NavLink>
+                </li>
+                <li><NavLink to="/about">
+                    À propos</NavLink>
+                </li>
+
             </ul>
         </div>
 
