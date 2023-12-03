@@ -3,7 +3,7 @@ import Gallery from "../../components/Gallery"
 function Home(){
     return(
         <>
-            <div className="banner">Chez vous, ici et ailleurs</div>
+            <div className="banner">Chez vous, <br className="mobile-break"/>ici et ailleurs</div>
             <Gallery />
         </>
     )
