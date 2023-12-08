@@ -1,7 +1,9 @@
+import ErrorMsg from "../../components/ErrorMsg"
+
 function Error(){
     return(
         <>
-        <p>404</p>
+        <ErrorMsg />
         </>
     ) 
 }
