@@ -2,6 +2,7 @@ import {useParams, Navigate } from 'react-router-dom';
 import logements from '../data/data.json'
 import Carrousel from './Carrousel';
 import Tag from './Tag';
+import Collapse from './Collapse';
 
 
 import './ficheLogement.scss';
@@ -30,9 +31,12 @@ function FicheLogement(){
         <>
         <Carrousel />
         <div>hello logement</div>
-        <Tag
+        <div><Tag
         label={tagsLogement} 
-        />
+        /></div>
+        <div className='logement-equipements'>
+        <Collapse baseline="Équipements" content={equipements}/>
+        </div>
         
         </>
     )
