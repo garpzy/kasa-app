@@ -1,14 +1,19 @@
 import {useParams } from 'react-router-dom';
-import data from '.data/data.json';
-import 'ficheLogement.scss';
+import logements from '../data/data.json'
+import Carrousel from './Carrousel';
+
+
+import './ficheLogement.scss';
 
 function FicheLogement(){
     let { logementId } = useParams();
-    // let ficheLogement = data.find((logement) => logement.id === logementId);
+    let ficheLogement = logements.find((logement) => logement.id === logementId);
    
     return(
-        <div>
-            hey
-        </div>
+        <>
+            <Carrousel />
+        </>
     )
 }
+
+export default FicheLogement
