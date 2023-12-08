@@ -27,19 +27,23 @@ function About(){
 	]
 
     return (
-        <>
-            <Banner />
-            {aboutDatas.map(data => {
-                    return (
-                        <div key={data.id} className="about_main_collapse">
-                            <Collapse 
-                            style={{margin:'30px 0'}}  
-                            baseline={data.baseline} 
-                            content={data.content} 
-                            />
-                        </div>
-                    )}
-                )}     
+			<>
+		<Banner 
+		banner_page={'banner_about'}
+		text={''}
+		/>
+            
+		{aboutDatas.map(data => {
+				return (
+					<div key={data.id} className="about_main_collapse">
+						<Collapse 
+						style={{margin:'30px 0'}}  
+						baseline={data.baseline} 
+						content={data.content} 
+						/>
+					</div>
+				)}
+			)}     
         </>
     )
 }

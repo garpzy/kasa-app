@@ -2,7 +2,8 @@ function Logement(){
     return (
         <>
         <div>
-            hey
+            <p>hey
+            </p> 
         </div>
         </>
     )

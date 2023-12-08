@@ -25,6 +25,10 @@ li, li a {
     width: auto;
 }
 
+.active{
+    text-decoration: underline;
+}
+
 @media screen and (max-width: 500px){
     li, li a {
         font-size: 12px;

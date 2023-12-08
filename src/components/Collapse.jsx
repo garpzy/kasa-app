@@ -26,28 +26,6 @@ function Collapse({baseline, content}){
             </div>
         </>
     )
-
-    // for (i = 0; i < coll.length; i++) {
-    // coll[i].addEventListener("click", function() {
-    //     console.log("salut")
-    //     this.classList.toggle("active");
-    //     console.log(this)
-    //     let content = this.nextElementSibling;
-    //     if (content.style.display === "block") {
-    //     content.style.display = "none";
-    //     } else {
-    //     content.style.display = "block";
-    //     }
-    // });
-    // }
-    // return (
-    //     <>
-    //     <button type="button" class="collapsible">{baseline}</button>
-    //     <div class="content">
-    //         <p>{content}</p>
-    //     </div>
-    //     </>
-    // )
 }
 
 export default Collapse
