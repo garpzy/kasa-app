@@ -8,16 +8,17 @@ import './ficheLogement.scss';
 
 function FicheLogement(){
     // Récupérer le bon id pour générer une page par logement
-    let { logementId } = useParams();
-    let ficheLogement = logements.find((logement) => logement.id === logementId);
+    let logementId = useParams('id').id;
+	let ficheLogement = logements.find(logement => logement.id === logementId);
+    console.log(logementId)
 
     // Tags
-    const tagsLogement = ficheLogement?.tags.map((tags, i) => {
-    return <Tag key={i} nom={tags} />;
+    let tagsLogement = ficheLogement?.tags.map((tags, i) => {
+    return <Tag key={i} label={tags} />;
     });
 
     // Équipements
-    const equipements = ficheLogement?.equipments.map((equipment, i) => {
+    let equipements = ficheLogement?.equipments.map((equipment, i) => {
         return (
         <ul key={i}>
             <li>{equipment}</li>
@@ -29,6 +30,10 @@ function FicheLogement(){
         <>
         <Carrousel />
         <div>hello logement</div>
+        <Tag
+        label={tagsLogement} 
+        />
+        
         </>
     )
 

@@ -1,10 +1,10 @@
 import './tag.scss'
 
-function Tag({nom}){
+function Tag({label}){
     return(
         <>
         <div className='tag'>
-            <p>{nom}</p>
+            <p>{label}</p>
         </div>
         </>
     )
