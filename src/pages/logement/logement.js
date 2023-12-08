@@ -1,9 +1,10 @@
+import FicheLogement
+
 function Logement(){
     return (
         <>
         <div>
-            <p>hey
-            </p> 
+            
         </div>
         </>
     )
