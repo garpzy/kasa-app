@@ -29,13 +29,30 @@ function FicheLogement(){
 
     return(
         <>
-        <Carrousel />
-        <div>hello logement</div>
-        <Tag
-        label={tagsLogement} 
-        />
-        <div className='logement-equipements'>
-        <Collapse baseline="Équipements" content={equipements}/>
+        <div className='carrousel'>
+            <Carrousel />
+        </div>
+        <div className='info'>
+            <div className='info-main'>
+                <div className='title'>{ficheLogement.title}</div>
+                <div className='location'>{ficheLogement.location}</div>
+                <div className='tags'>{tagsLogement}</div>
+            </div>
+            <div className='info-secondary'>
+                <div className='owner'>
+                    <div>{ficheLogement.host.name}</div>
+                    <div><img className='owner_picture' src={ficheLogement.host.picture} alt="photo de profil du propriétaire" /></div>
+                </div>
+                <div className='rating'>La note du logement</div>
+            </div>
+        </div>
+        <div className='info-tertiary'>
+            <div className='description'>
+                <Collapse baseline="Description" content={"description"}/>
+            </div>
+            <div className='collapsible_content_logement'>
+                <Collapse baseline="Équipements" content={equipements}/>
+            </div>
         </div>
         
         </>

@@ -1,4 +1,48 @@
-.logement-equipements li{
-    color: white;
+
+
+.carrousel{
+    height: 200px;
+    width: 100%;
+    background-color: aquamarine;
 }
 
+.info{
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    &-main{
+        display: flex;
+        flex-direction: column;
+        gap: 12px;
+        width: fit-content;
+    }
+    &-secondary{
+        display: flex;
+        flex-direction: column;
+        gap: 12px;
+        align-items: flex-end;
+    }
+    &-tertiary{
+        display: flex;
+        gap: 24px;
+        width: 100%;
+    }
+    &-tertiary div{
+        width: 100%;
+    }
+}
+
+.tags{
+    margin-top: 12px;
+}
+
+.owner{
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    &_picture{
+        border-radius: 50%;
+        width: 64px;
+        height: auto;
+    }
+}
