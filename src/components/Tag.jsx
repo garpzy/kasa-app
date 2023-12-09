@@ -4,7 +4,7 @@ function Tag({label}){
     return(
         <>
         <div className='tag'>
-            <p>{label}</p>
+            {label}
         </div>
         </>
     )
