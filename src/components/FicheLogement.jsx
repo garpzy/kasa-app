@@ -31,9 +31,9 @@ function FicheLogement(){
         <>
         <Carrousel />
         <div>hello logement</div>
-        <div><Tag
+        <Tag
         label={tagsLogement} 
-        /></div>
+        />
         <div className='logement-equipements'>
         <Collapse baseline="Équipements" content={equipements}/>
         </div>
