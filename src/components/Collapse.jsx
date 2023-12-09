@@ -18,7 +18,7 @@ function Collapse({baseline, content}){
                 <div className={toggle ? 'collapsible_content' : 'collapsible_content_hidden'}>
                     {Array.isArray(content) ? content.map((item, index) => {
                         return (
-                            <p key={index}>{item}</p>
+                            <div key={index}>{item}</div>
                         )
                     }) : content
                     }

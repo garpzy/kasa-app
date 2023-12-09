@@ -47,10 +47,10 @@ function FicheLogement(){
             </div>
         </div>
         <div className='info-tertiary'>
-            <div className='description'>
-                <Collapse baseline="Description" content={"description"}/>
+            <div>
+                <Collapse baseline="Description" content={ficheLogement.description}/>
             </div>
-            <div className='collapsible_content_logement'>
+            <div>
                 <Collapse baseline="Équipements" content={equipements}/>
             </div>
         </div>
