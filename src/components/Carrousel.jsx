@@ -1,9 +1,13 @@
-import './carrousel.scss'
+import './carrousel.scss';
+import logements from "../data/data.json"
 
-function Carrousel(){
+function Carrousel({pictures}){
+    // let picturesLogement
+	// let ficheLogement = logements.find(logement => logement.pictures === picturesLogement);
+
     return(
         <>
-        <p>heyyy Carrousel</p>
+        <p>hello</p>
         </>
     )
 }

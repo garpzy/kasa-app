@@ -11,7 +11,6 @@ function FicheLogement(){
     // Récupérer le bon id pour générer une page par logement
     let logementId = useParams('id').id;
 	let ficheLogement = logements.find(logement => logement.id === logementId);
-    console.log(logementId)
 
     // Tags
     let tagsLogement = ficheLogement?.tags.map((tags, i) => {
@@ -30,7 +29,8 @@ function FicheLogement(){
     return(
         <>
         <div className='carrousel'>
-            <Carrousel />
+            <Carrousel pictures={ficheLogement.pictures}/>
+            <p>{ficheLogement.pictures}</p>
         </div>
         <div className='info'>
             <div className='info-main'>
