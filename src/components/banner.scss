@@ -6,9 +6,7 @@
     border-radius: 24px;
     height: 224px;
     font-size: 48px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
+    @include flex(row);
     width: 100%;
     background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url("../assets/home_cover.png");
 }
@@ -19,9 +17,7 @@
     border-radius: 24px;
     height: 224px;
     font-size: 48px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
+    @include flex(row);
     width: 100%;
     background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url('../assets/about_cover.png');
 }

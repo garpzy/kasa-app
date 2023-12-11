@@ -1,47 +1,66 @@
 @import "../styles/main.scss";
 
 .carrousel{
-    height: 200px;
+    height: auto;
     width: 100%;
     background-color: aquamarine;
+    @media screen and (max-width:900px){
+        padding: 0px 20px;      
+    }
 }
 
 .info{
-    display: flex;
-    justify-content: space-between;
+    color: $base-color;
+    @include flex(row, space-between);
     width: 100%;
+    @media screen and (max-width:900px){
+        padding: 0px 20px;      
+    }
+    @media screen and (max-width:500px){
+        flex-direction: column;  
+        padding: 0px 20px;      
+    }
     &-main{
-        display: flex;
-        flex-direction: column;
-        gap: 12px;
+        @include flex(column, $align: left, $gap: 12px);
         width: fit-content;
     }
     &-secondary{
-        display: flex;
-        flex-direction: column;
-        gap: 12px;
-        align-items: flex-end;
+        @include flex(column, center, flex-end, 12px);
+        width: 100%;
+        
+        @media screen and (max-width:500px){
+            flex-direction: row-reverse;
+            justify-content: space-between;   
+            align-items: center;     
+        }
+        
     }
     &-tertiary{
-        display: flex;
-        gap: 24px;
+        @include flex(row, space-between, center, 20px);
         width: 100%;
+
+    @media screen and (max-width:900px){
+        padding: 0px 20px;      
+    }
+
+    @media screen and (max-width:500px){
+        flex-direction: column;  
+        padding: 0px 20px;      
+    }
     }
     &-tertiary div{
         width: 100%;
+        // max-width: 600px;
     }
 }
 
 .tags{
     margin-top: 12px;
-    display: flex;
-    gap: 12px;
+    @include flex(row, left, center, 12px);
 }
 
 .owner{
-    display: flex;
-    align-items: center;
-    gap: 12px;
+    @include flex(row, center, center, 12px);
     &_picture{
         border-radius: 50%;
         width: 64px;
@@ -51,10 +70,8 @@
 
 .title{
     font-size: 36px;
-    color: #FF6060;
 }
 
 .location{
-    color: #FF6060;
     font-size: 18px;
 }

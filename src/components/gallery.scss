@@ -1,18 +1,18 @@
 @import "../styles/main.scss";
 
 .gallery{
-    background-color: #F6F6F6;
+    background-color: $secondary-color;
     border-radius: 24px;
     padding: 50px;
     width: 100%;
-    @include flex(row, space-between);
+    @include flex(row, space-between, center, 50px);
     flex-wrap: wrap;
-    gap: 24px;
 }
 
 @media screen and (max-width: 500px) {
     .gallery{
         background-color: white;
         padding: 20px;
+        gap: 20px
     }
 }
