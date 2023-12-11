@@ -2,10 +2,9 @@
 
 .gallery_card{
     position: relative;
-    display: flex;
-    flex-direction: column;
+    @include flex(column);
     gap: 24px;
-    width: 340px;
+    width: 30%;
     height: 340px;
     border-radius: 10px;
     cursor: pointer;
