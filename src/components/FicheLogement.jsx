@@ -3,6 +3,7 @@ import logements from '../data/data.json'
 import Carrousel from './Carrousel';
 import Tag from './Tag';
 import Collapse from './Collapse';
+import Rating from './Rating';
 
 
 import './ficheLogement.scss';
@@ -43,7 +44,9 @@ function FicheLogement(){
                     <div>{ficheLogement.host.name}</div>
                     <div><img className='owner_picture' src={ficheLogement.host.picture} alt="photo de profil du propriétaire" /></div>
                 </div>
-                <div className='rating'>La note du logement</div>
+                <div className='rating'>
+                    <Rating />
+                </div>
             </div>
         </div>
         <div className='info-tertiary'>
