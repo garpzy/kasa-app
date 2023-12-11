@@ -1,5 +1,7 @@
+@import "../styles/main.scss";
+
 .error-404{
-    color: #FF6060;
+    color: $base-color;
     font-size: 288px;
     font-weight: 700;
 }
