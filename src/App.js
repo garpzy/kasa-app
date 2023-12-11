@@ -1,6 +1,5 @@
 import './App.scss';
 import './index.scss';
-// import "./src/assets/_variables.scss";
 
 import Header from './components/Header';
 import Footer from './components/Footer';
