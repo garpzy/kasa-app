@@ -42,3 +42,5 @@ function Rating(){
 export default Rating
 
 
+// try : 
+// const doubled = numbers.map((number) => number * 2);
