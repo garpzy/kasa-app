@@ -5,34 +5,40 @@ import greyStar from "../assets/grey_star.png";
 import redStar from "../assets/red_star.png";
 import logements from "../data/data.json"
 
-function Rating({note}){
+function Rating(){
     // Récupérer le bon id pour générer une page par logement
     let logementId = useParams('id').id;
     let logement = logements.find(logement => logement.id === logementId);
 
-    let rating = [logement.rating]
+    let rating = logement.rating
     let nbGreyStar = 5-rating;
-    console.log(rating)
-    console.log(nbGreyStar)
+
+    let redStars = Array.from({length: rating}, (_, index) => {
+        return (<img
+            key={index}
+            className="etoile"
+            src={redStar}
+            alt="red star"
+          />);
+    })
+
+    let greyStars = Array.from({length: nbGreyStar}, (_, index) => {
+        return (<img
+            key={index}
+            className="etoile"
+            src={greyStar}
+            alt="red star"
+          />);
+    })
+
     return(
         <>
-        
-           <img
-              key={rating.toString()}
-              className="etoile"
-              src={redStar}
-              alt="red star"
-            />
-            
-            {<img
-              key={rating.toString()}
-              className="etoile"
-              src={greyStar}
-              alt="grey star"
-            />}
-            
+            {redStars}
+            {greyStars}
         </>
     )
 }
 
 export default Rating
+
+
