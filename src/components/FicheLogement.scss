@@ -13,13 +13,13 @@
     color: $base-color;
     @include flex(row, space-between, center, 20px);
     width: 100%;
-    @media screen and (max-width:1200px){
+    @media screen and (max-width: $breakpoint-desktop){
         padding: 0px 20px;      
     }
 
     @media screen and (max-width:550px){
-        flex-direction: column;  
-        padding: 0px 20px;      
+        @include flex(column, $align: flex-start, $gap: 12px);
+        padding: 0px 20px;
     }
     &-main{
         @include flex(column, $align: left, $gap: 12px);
@@ -40,12 +40,12 @@
     @include flex(row, space-between, center, 20px);
         width: 100%;
 
-    @media screen and (max-width:1200px){
+    @media screen and (max-width: $breakpoint-desktop){
         padding: 0px 20px;      
     }
 
     @media screen and (max-width:550px){
-        flex-direction: column;  
+        flex-direction: column;
         padding: 0px 20px;      
     }
     }

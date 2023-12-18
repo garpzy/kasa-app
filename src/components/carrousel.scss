@@ -1,1 +1,55 @@
 @import "../styles/main.scss";
+
+.slider{
+    position: relative;
+    max-height: 415px;
+    width: 100%;
+    overflow: hidden;
+    @include flex();
+}
+
+.slider .imgDisplayed{
+    object-fit: cover;
+    width: 100%;
+    height: auto;
+    
+}
+
+.right-Arrow {
+    display: flex;
+    position: absolute;
+    top: 42%;
+    right: 2%;
+    width: 12px;
+    height: 20px;
+    z-index: 10;
+    cursor: pointer;
+    color: $tertiary-color;
+  
+    @media screen and (min-width: $breakpoint-desktop) {
+      width: 47px;
+      height: 79px;
+      top: 42%;
+      font-size: 4.5rem;
+    }
+  }
+
+.left-Arrow{
+    display: flex;
+    position: absolute;
+    font-size: 1.5rem;
+    top: 42%;
+    left: 2%;
+    height: 20px;
+    width: 12px;
+    z-index: 10;
+    cursor: pointer;
+    color: $tertiary-color;
+  
+    @media screen and (min-width: $breakpoint-desktop) {
+      width: 47px;
+      height: 79px;
+      top: 42%;
+      font-size: 4.5rem;
+    }
+}

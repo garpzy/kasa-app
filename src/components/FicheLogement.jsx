@@ -29,10 +29,7 @@ function FicheLogement(){
 
     return(
         <>
-        <div className='carrousel'>
-            <Carrousel pictures={ficheLogement.pictures}/>
-            <p>{ficheLogement.pictures}</p>
-        </div>
+        <Carrousel pictures={ficheLogement.pictures}/>
         <div className='info'>
             <div className='info-main'>
                 <div className='title'>{ficheLogement.title}</div>
