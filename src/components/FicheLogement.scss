@@ -17,7 +17,7 @@
         padding: 0px 20px;      
     }
 
-    @media screen and (max-width:550px){
+    @media screen and (max-width: $breakpoint-mobile){
         @include flex(column, $align: flex-start, $gap: 12px);
         padding: 0px 20px;
     }
@@ -29,7 +29,7 @@
         @include flex(column, center, flex-end, 12px);
         width: 100%;
         
-        @media screen and (max-width:550px){
+        @media screen and (max-width: $breakpoint-mobile){
             flex-direction: row-reverse;
             justify-content: space-between;   
             align-items: center;     
@@ -44,7 +44,7 @@
         padding: 0px 20px;      
     }
 
-    @media screen and (max-width:550px){
+    @media screen and (max-width: $breakpoint-mobile){
         flex-direction: column;
         padding: 0px 20px;      
     }

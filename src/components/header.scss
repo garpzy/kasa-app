@@ -3,7 +3,7 @@
 .header {
     @include flex(row, space-between, center);
     margin-top: 48px;
-    margin-bottom: 48px;
+    margin-bottom: 24px;
     max-width: 1240px;
     width: 100%;
 }
@@ -26,13 +26,21 @@
     text-decoration: underline;
 }
 
-@media screen and (max-width: 500px){
+@media screen and (max-width: $breakpoint-mobile){
     li, li a {
         font-size: 12px;
     }    
     .logo {
         height: 45px;
     }
+    .header {
+        padding: 0px 20px;
+        margin-bottom: 0px;
+        margin-top: 0px;
+    }
+}
+
+@media screen and (max-width: $breakpoint-desktop){
     .header {
         padding: 20px;
         margin-bottom: 0px;

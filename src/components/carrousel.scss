@@ -6,6 +6,12 @@
     width: 100%;
     overflow: hidden;
     @include flex();
+
+    @media screen and (max-width: $breakpoint-mobile) {
+        height: 255px;
+        padding: 0px 20px;
+        border-radius: 24px;
+      }
 }
 
 .slider .imgDisplayed{
