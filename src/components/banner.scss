@@ -27,15 +27,14 @@
 }
 
 
-@media (max-width: 500px) {
+@media (max-width: $breakpoint-mobile) {
 
     .banner_home, .banner_about{
         font-size: 24px;
         height: 112px;
         justify-content: left;
-        padding: 20px;
-        margin-left: 20px;
-        margin-right: 20px;
+        width: 100%;
+        padding: 0px 20px;
     }
     .banner_home .mobile-break, .banner_about .mobile-break{
     display: block;

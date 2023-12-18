@@ -35,13 +35,12 @@ body{
     justify-content: center;
     align-items: center;
     gap: 36px;
-    max-width: 1240px;
+    max-width: $breakpoint-desktop;
     width: 100%;
-}
-
-@media (max-width:500px){
-    .main{
-        gap:24px;
-        // padding: 20px;
+    @media screen and (max-width: $breakpoint-desktop){
+            gap:24px;
+            padding: 0px 20px;
+        
     }
 }
+
