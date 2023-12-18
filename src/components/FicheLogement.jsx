@@ -27,6 +27,10 @@ function FicheLogement(){
         );
     });
 
+    // Nom et prénom séparés sur deux lignes
+    const name = ficheLogement.host.name.split(' '); 
+
+
     return(
         <>
         <Carrousel pictures={ficheLogement.pictures}/>
@@ -38,7 +42,11 @@ function FicheLogement(){
             </div>
             <div className='info-secondary'>
                 <div className='owner'>
-                    <div>{ficheLogement.host.name}</div>
+                    {/* <div>{ficheLogement.host.name}</div> */}
+                    <div className='owner_name'>
+                        <span>{name[0]}</span>
+                        <span>{name[1]}</span>
+                    </div>
                     <div><img className='owner_picture' src={ficheLogement.host.picture} alt="photo de profil du propriétaire" /></div>
                 </div>
                 <div className='rating'>

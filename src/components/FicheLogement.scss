@@ -3,7 +3,6 @@
 .carrousel{
     height: auto;
     width: 100%;
-    background-color: aquamarine;
     @media screen and (max-width:900px){
         padding: 0px 20px;      
     }
@@ -37,7 +36,7 @@
         
     }
     &-tertiary{
-    @include flex(row, space-between, center, 20px);
+    @include flex(row, space-between, flex-start, 20px);
         width: 100%;
 
     @media screen and (max-width: $breakpoint-desktop){
@@ -67,6 +66,10 @@
         width: 64px;
         height: auto;
     }
+}
+
+.owner_name{
+    @include flex(column, center, flex-end, 4px)
 }
 
 .title{
